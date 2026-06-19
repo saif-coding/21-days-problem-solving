@@ -104,17 +104,23 @@
 
 // ---
 
-// 5. **Print Hollow Square Pattern**
-for (let i = 1; i <= 5; i++) {
-  let str = "";
-  for (let k = 1; k <= 5 - i; k++) {
-    str += " ";
-  }
-  for (let j = 1; j <= 2 * i - 1; j++) {
-    str += "*";
-  }
-  console.log(str);
-}
+//❌ 5. **Print Hollow Square Pattern**
+// const rows = 5;
+// const cols = 5;
+// let pattern = "";
+
+// for (let i = 0; i < rows; i++) {
+//   for (let j = 0; j < cols; j++) {
+//     // Print asterisk if it's the first/last row, or first/last column
+//     if (i === 0 || i === rows - 1 || j === 0 || j === cols - 1) {
+//       pattern += "*";
+//     } else {
+//       pattern += " "; // Hollow space inside
+//     }
+//   }
+//   pattern += "\n"; // Move to the next line
+// }
+// console.log(pattern);
 //    * Input: `Rows = 5`
 //    * Output:
 
