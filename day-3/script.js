@@ -136,6 +136,30 @@
 // ---
 
 // 6. **Print Hollow Pyramid Pattern**
+function printHollowPyramid(rows) {
+  for (let i = 1; i <= rows; i++) {
+    let rowStr = "";
+
+    // 1. Add leading spaces
+    for (let j = 1; j <= rows - i; j++) {
+      rowStr += " ";
+    }
+
+    // 2. Add stars and internal spaces
+    for (let j = 1; j <= 2 * i - 1; j++) {
+      // Condition for boundaries or the bottom solid row
+      if (j === 1 || j === 2 * i - 1 || i === rows) {
+        rowStr += "*";
+      } else {
+        rowStr += " ";
+      }
+    }
+
+    // 3. Print the completed row
+    console.log(rowStr);
+  }
+}
+printHollowPyramid(5);
 
 //    * Input: `Rows = 5`
 //    * Output:
